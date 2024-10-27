@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Masuk dan Membuat Login Page di MikroTik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #35424a;
+        }
+        ul {
+            list-style-type: square;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .intro {
+            background: #e2e2e2;
+            padding: 15px;
+            border-left: 5px solid #35424a;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cara Masuk dan Membuat Login Page di MikroTik</h1>
+</header>
+
+<div class="container">
+    <div class="intro">
+        <h2>Desain Jaringan</h2>
+        <p>Desain jaringan yang baik sangat penting untuk memastikan konektivitas yang stabil dan aman. MikroTik adalah salah satu perangkat yang banyak digunakan untuk mengelola jaringan, termasuk dalam pengaturan hotspot dan captive portal. Dengan memahami cara mengakses dan mengkonfigurasi MikroTik, Anda dapat mengoptimalkan jaringan Anda untuk kebutuhan pengguna.</p>
+    </div>
+
+    <h2>Cara Masuk ke MikroTik</h2>
+    <p>Ada beberapa cara untuk mengakses MikroTik, antara lain:</p>
+    <ul>
+        <li><strong>WinBox:</strong> Aplikasi grafis yang paling umum digunakan. Biasanya sudah terinstall di komputer Anda jika Anda sudah pernah mengkonfigurasi MikroTik.</li>
+        <li><strong>SSH:</strong> Koneksi melalui terminal menggunakan protokol Secure Shell. Anda bisa menggunakan aplikasi seperti PuTTY.</li>
+        <li><strong>Telnet:</strong> Koneksi melalui terminal, namun kurang aman karena tidak terenkripsi. Sebaiknya hindari menggunakan Telnet.</li>
+    </ul>
+
+    <h3>Langkah-langkah Umum:</h3>
+    <ol>
+        <li>Tentukan alamat IP MikroTik: Biasanya Anda bisa menemukannya di label fisik router atau dengan melihat daftar perangkat di jaringan Anda.</li>
+        <li>Buka aplikasi: Jalankan WinBox atau aplikasi SSH/Telnet yang Anda pilih.</li>
+        <li>Masukkan informasi koneksi:
+            <ul>
+                <li>Alamat IP: Masukkan alamat IP MikroTik.</li>
+                <li>Username: Biasanya "admin".</li>
+                <li>Password: Masukkan password yang telah Anda atur. Jika belum diubah, biasanya kosong.</li>
+            </ul>
+        </li>
+        <li>Klik Connect: Setelah semua informasi benar, klik tombol Connect.</li>
+    </ol>
+
+    <h2>Membuat Login Page (Captive Portal)</h2>
+    <p>Setelah berhasil masuk, Anda bisa membuat login page untuk mengontrol akses ke jaringan Anda. Berikut langkah-langkah umum:</p>
+    <ol>
+        <li>Aktifkan fitur Hotspot:
+            <ul>
+                <li>WinBox: Cari menu "IP" lalu pilih "Hotspot".</li>
+                <li>SSH: Gunakan perintah <code>ip hotspot</code>.</li>
+            </ul>
+        </li>
+        <li>Konfigurasi interface: Tentukan interface mana yang akan digunakan untuk hotspot.</li>
+        <li>Buat profile: Buat profile hotspot dengan nama dan pengaturan yang Anda inginkan.</li>
+        <li>Buat server: Konfigurasikan server hotspot untuk mengatur autentikasi (local, radius, dll).</li>
+        <li>B uat halaman login: Anda bisa membuat halaman login sendiri atau menggunakan template yang disediakan oleh MikroTik.</li>
+        <li>Aktifkan hotspot: Setelah semua konfigurasi selesai, aktifkan hotspot.</li>
+    </ol>
+
+    <h3>Catatan:</h3>
+    <ul>
+        <li><strong>Konfigurasi:</strong> Konfigurasi hotspot di MikroTik cukup kompleks dan memiliki banyak opsi. Sebaiknya baca dokumentasi resmi MikroTik untuk pemahaman yang lebih dalam.</li>
+        <li><strong>Keamanan:</strong> Pastikan Anda menggunakan password yang kuat dan mengaktifkan fitur keamanan lainnya untuk melindungi jaringan Anda.</li>
+        <li><strong>Customisasi:</strong> Anda bisa melakukan banyak kustomisasi pada login page, seperti tampilan, bahasa, dan fitur tambahan.</li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2024 - Cara Masuk dan Membuat Login Page di MikroTik@Alfian</p>
+    </footer>
+</div>
+
+</body>
+</html>
